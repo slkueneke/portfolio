@@ -10,8 +10,8 @@ import { RouterLink } from '@angular/router';
       <section class="colLeft">
         <section>
           <div>
-            <img src="/headshot.png" alt="Photo of Shannon" />
-            <img id="bubble" src="/bubble.png" alt="Hello speech bubble" />
+            <img src="headshot.png" alt="Photo of Shannon" />
+            <img id="bubble" src="bubble.png" alt="Hello speech bubble" />
           </div>
           <h3 class="font-bubble desktop tablet">I'm Passionate About...</h3>
           <ul class="font-clean desktop tablet">

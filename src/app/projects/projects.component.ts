@@ -191,7 +191,7 @@ export class ProjectsComponent {
       {
         id: 'bio-site',
         name: 'Bio Site',
-        image: '/biosite.png',
+        image: 'biosite.png',
         link: 'https://slkueneke.github.io/bioSite/',
         tech: ['HTML5', 'CSS3', 'JavaScript'],
         desc: 'Creation of a responsive bio site for my friend, Fritzie Dizon. This site showcases details about her personal and professional life.',
@@ -201,7 +201,7 @@ export class ProjectsComponent {
       {
         id: 'rpg',
         name: 'RPG Character Builder',
-        image: '/rpg.png',
+        image: 'rpg.png',
         link: 'https://github.com/slkueneke/web-425/tree/master/rpg-character-builder',
         tech: ['Angular', 'TypeScript', 'HTML5', 'CSS3'],
         desc: 'Built a full, stateful, component-driven Angular application based around creating RPG characters for offline play.',
