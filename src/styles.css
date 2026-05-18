@@ -97,6 +97,7 @@ body {
   cursor: pointer;
   margin-right: 1em;
   font-family: "Google Sans Code", monospace;
+  color:#1b1b1bff;
 }
 
 .cta:hover,
