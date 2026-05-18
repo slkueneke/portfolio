@@ -9,12 +9,14 @@ import { Router, RouterLink } from '@angular/router';
     <div class="flexWrapper">
       <section class="colLeft">
         <section>
-          <h2 class="font-bubble">Bucket List</h2>
-          <ul class="font-clean">
-            <li>Create a native app</li>
-            <li>Master Python</li>
-            <li>Learn React</li>
-          </ul>
+          <section>
+            <h2 class="font-bubble">Bucket List</h2>
+            <ul class="font-clean">
+              <li>Create a native app</li>
+              <li>Master Python</li>
+              <li>Learn React</li>
+            </ul>
+          </section>
         </section>
       </section>
 
@@ -22,7 +24,10 @@ import { Router, RouterLink } from '@angular/router';
         <section>
           <h2 class="font-mono color-dark">Hi, I'm Shannon.</h2>
           <p class="font-clean color-grey">
-            I'm a developer who loves turning ideas into interactive, beautifully structured digital experiences. From character builders to real-world apps, I craft clean, modular systems powered by modern front and back-end engineering.
+            I'm a developer who loves turning ideas into interactive,
+            beautifully structured digital experiences. From character builders
+            to real-world apps, I craft clean, modular systems powered by modern
+            front and back-end engineering.
           </p>
           <button class="cta" routerLink="/resume">View Resume</button>
           <button class="cta" routerLink="/projects">My Projects</button>
@@ -54,6 +59,19 @@ import { Router, RouterLink } from '@angular/router';
 
       .colRight p {
         font-size: 1.2em;
+      }
+
+      /*PHONES*/
+      @media all and (max-width: 576px) {
+        .colLeft > section {
+          border: 3px solid #dedec3;
+          margin: 0 1em;
+        }
+
+        .colLeft > section > section {
+          border: 7px solid #a8a892;
+          padding-bottom: 1em;
+        }
       }
     `,
   ],
