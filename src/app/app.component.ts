@@ -22,9 +22,11 @@ import { RouterLink, RouterOutlet, RouterModule } from '@angular/router';
 
       <header [class.mobNavScrolled]="mobNavScrolled">
         <div id="name">
-          <h1 routerLink="/">
-            > Shannon Kueneke<span class="blinkName">_</span>
-          </h1>
+          <a routerLink="/">
+            <h1>
+              > Shannon Kueneke<span class="blinkName">_</span>
+            </h1>
+          </a>
         </div>
 
         <nav class="desktop">
