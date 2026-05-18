@@ -169,13 +169,13 @@ import { CommonModule } from '@angular/common';
       <section class="colRight">
         <h2 class="font-mono subpage">Resume_</h2>
 
-        <section>
+        <section tabindex="0">
           <section class="resumeSec" id="experience">
             <h4 class="font-bubble">Experience</h4>
 
             @for (exp of experience; track exp) {
               <ul class="experience-container">
-                <h5>{{ exp.jobTitle }}</h5>
+                <li><h5>{{ exp.jobTitle }}</h5></li>
 
                 <li>{{ exp.employer }}, {{ exp.location }}</li>
                 <li>{{ exp.startDate }} - {{ exp.endDate }}</li>
@@ -405,12 +405,17 @@ import { CommonModule } from '@angular/common';
     }
 
     h5,
+    li > h5,
     .bold {
       font-family: 'Google Sans Code', monospace;
       margin: 0;
       font-size: 0.9em;
       font-weight: 400;
       margin-bottom: 0.3em;
+    }
+
+    li > h5 {
+      font-size:1.1em;
     }
 
     .bold {

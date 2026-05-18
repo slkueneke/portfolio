@@ -51,6 +51,7 @@ import { CommonModule } from '@angular/common';
                 target="_blank"
                 *ngIf="selectedProject.link"
                 [href]="selectedProject.link"
+                title="click to view project"
               >
                 <img
                   *ngIf="selectedProject.image"
