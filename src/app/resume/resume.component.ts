@@ -94,7 +94,7 @@ import { CommonModule } from '@angular/common';
                 href="ShannonKueneke-Resume2026.pdf"
                 download="ShannonKueneke-Resume2026.pdf"
                 title="Download resume"
-                class="mobile tablet"
+                class="mobile"
               >
                 <svg
                   _ngcontent-ng-c2944580614=""
@@ -175,7 +175,9 @@ import { CommonModule } from '@angular/common';
 
             @for (exp of experience; track exp) {
               <ul class="experience-container">
-                <li><h5>{{ exp.jobTitle }}</h5></li>
+                <li>
+                  <h5>{{ exp.jobTitle }}</h5>
+                </li>
 
                 <li>{{ exp.employer }}, {{ exp.location }}</li>
                 <li>{{ exp.startDate }} - {{ exp.endDate }}</li>
@@ -320,10 +322,10 @@ import { CommonModule } from '@angular/common';
     #socialLinks {
       display: flex;
       flex-direction: row;
-      margin-left: 2em;
       width: fit-content;
-      gap: 2.5em;
       margin-top: 1em;
+      margin-left:0;
+      gap:2em;
     }
 
     #socialLinks li:hover svg path {
@@ -337,6 +339,10 @@ import { CommonModule } from '@angular/common';
 
     #socialLinks svg path {
       fill: #4c4c47ff;
+    }
+
+    #socialLinks .mobile {
+      display: none;
     }
 
     .experience-container {
@@ -415,7 +421,7 @@ import { CommonModule } from '@angular/common';
     }
 
     li > h5 {
-      font-size:1.1em;
+      font-size: 1.1em;
     }
 
     .bold {
@@ -470,6 +476,10 @@ import { CommonModule } from '@angular/common';
         flex-wrap: wrap;
         width: initial;
         margin-top: 0;
+      }
+
+      #socialLinks .mobile {
+        display: block;
       }
 
       #resumeNav a.cta {
