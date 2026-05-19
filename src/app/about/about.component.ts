@@ -143,6 +143,12 @@ import { RouterLink } from '@angular/router';
         }
       }
 
+      @media all and (max-width:1024px) {
+        #bubble {
+          right:-4em;
+        }
+      }
+
       /*PHONES*/
       @media all and (max-width: 576px) {
         /*mobile*/

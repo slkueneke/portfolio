@@ -577,9 +577,9 @@ import { RouterLink, RouterOutlet, RouterModule } from '@angular/router';
           width: 30px;
         }
 
-        nav.mobile.tablet > ul > li:not(.noBefore):hover::before {
+        /*nav.mobile.tablet > ul > li:not(.noBefore):hover::before {
           content: '> ';
-        }
+        }*/
 
         header.mobNavScrolled {
           background-color: #dedec3;
